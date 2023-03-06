@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>Aavkar</title>
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand titlename" href="#">Aavkar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-decoration-none text-white fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="#">Today's Specials <span class="badge bg-danger">New</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="#testimonials">Reviews</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-decoration-none text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="menu.html">See Menu Here</a></li>
+
+                <li><a class="dropdown-item " href="#">Book your order</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+
+            <button class="btn btn-outline-danger bg-danger" type="submit"><a  class="text-decoration-none text-white fw-bold" href="#party">Book For Occasion</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner carouselcss">
+          <div class="carousel-item active">
+            <img src="images/bg1.jpg" class="d-block w-100" alt="Kathiyawadi thali">
+            <div class="carousel-caption">
+              <h3>Want to taste the best Kathiyawadi Food?</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/thali1.webp" class="d-block w-100" alt="sukibhaji">
+            <div class="carousel-caption">
+              <h3>Its not too late!</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sevtameta.jpg" class="d-block w-100" alt="sevtameta">
+            <div class="carousel-caption">
+              <h3>Be our guest</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bhajiya1.jpg" class="d-block w-100" alt="bhajiya">
+            <div class="carousel-caption">
+              <h3>From the origin of kathiyawad</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/paratha2.jpg" class="d-block w-100" alt="paratha">
+            <div class="carousel-caption">
+              <h3>You will not forget</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11" data-aos="fade-left" data-aos-duration="1500">
+      <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Book Your Order Now</strong>
+          <button type="button" class="btn-close" id="close-btn" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+
+        <div class="toast-body">
+          Hello dear! Check out the menu.
+          <button type="button" class="btn btn-danger btn-sm mx-2"><a class = "text-decoration-none text-white fw-bold" href="menu.html">Menu</a></button>
+        </div>
+      </div>
+    </div>
+
+    <section id="details" data-aos="fade-up" data-aos-duration="1000"> 
+      <div class="container">
+        <center>
+          <br>
+          <h1>Kathiyawadi Cuisine</h1> <br>
+          <p>
+            <b>Aavkar</b> is a new Kathiwadi restaurant located in the heart of the city. We specialize in authentic
+            Kathiwadi cuisine prepared with the freshest ingredients. Our menu includes a variety of dishes from across
+            the state, from the traditional to the contemporary. Our chefs use traditional methods and techniques to
+            provide you with delicious flavors that will tantalize your taste buds.
+          </p><br>
+          <p>Coming to kathiawad , its a peninsula in gujarat which also known as sourashtra cuisine.In this region
+            there is high count of vegetarian and they are known for making spicy food. The most popular dishes here are
+            bhakri's,eggplant curries,stuffed chillies, undhiyo, patra, dhokla, dhokli and gathiya.</p>
+          <br>
+          <p>The largest city of Gujarat and the former capital of the state, Ahmedabad is a gastronome's delight. This
+            is where the supremely popular Gujarati Thali was served for the first time—way back in 1900 at the
+            Chandravilas restaurant, which still continues to delight food lovers.</p>
+
+        </center>
+      </div>
+      <marquee width="100%" direction="left" height="" id="marquee-menu">
+        Gathiya | Bhajiya | Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand | Gathiya |
+        Bhajiya | Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand | Gathiya | Bhajiya |
+        Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand | Gathiya |
+        Bhajiya | Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand | Gathiya | Bhajiya |
+        Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand | Gathiya |
+        Bhajiya | Kathiyawadi Thali | Sev Tameta Sabji | Onion Potato Sabji | Undhiyu | Shrikhand
+      </marquee><br>
+
+    </section>
+
+    <section class="my-4">
+      <div class="row text-center">
+        <div class="col " data-aos="flip-left" data-aos-duration="1000">
+          <div class="counter-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people-fill w-100" viewBox="0 0 16 16">
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+            </svg>
+            <h2 class="counter">2000</h2>
+            <p class="count-text ">Our Customers</p>
+          </div>
+        </div>
+        <div class="col" data-aos="flip-left" data-aos-duration="1000">
+          <div class="counter-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people-fill w-100" viewBox="0 0 16 16">
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+            </svg>
+            <h2 class="counter">1000</h2>
+            <p class="count-text ">Happy Clients</p>
+          </div>
+        </div>
+        <div class="col" data-aos="flip-left" data-aos-duration="1000">
+          <div class="counter-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-gift-fill w-100" viewBox="0 0 16 16">
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z" />
+            </svg>
+            <h2 class="counter">115</h2>
+            <p class="count-text ">Parties Organised</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="party" class="my-3" data-aos="zoom-in-up" data-aos-duration="1000">
+
+      <div class="row">
+        <div class="col-6">
+          <img src="images/party2.jpg" alt="partyimage">
+        </div>
+        <div class="col-6">
+
+          <form action="get" class="partyform">
+            <center>
+              <h4>
+                Register for Occasion
+              </h4>
+              <label for="date">Select Date: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"
+                id="date" required><br>
+              <label for="date">Select Time: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="time"
+                id="time" required><br>
+              <label for="occasion">Enter Occasion: </label>&nbsp;&nbsp;<input type="text" name="occasion" id="occasion"
+                required><br>
+
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 130px"></textarea>
+                <label for="floatingTextarea2">Enter some more details here: </label>
+              </div>
+              <br>
+              <center>
+                <button type="button" class="btn">Check Availability</button>
+                <button type="button" class="btn">Book Now</button>
+              </center>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="testimonials">
+      <center>
+        <h2>
+          Testimonials
+        </h2>
+      </center>
+      <div class="items d-flex">
+
+
+        <div class="testcard" data-aos="flip-right" data-aos-duration="1000">
+          <div class="media media-2x1 gd-primary">
+
+            <img class="profile-image"
+              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg">
+
+
+          </div>
+          <div class="testcard-body">
+            <h5 class="testcard-title">Tikoh Amin</h5>
+            <p class="testcard-text">"When you think of Apple you automatically think expensive if your anything like
+              me. When
+              purchasing this laptop I was skeptical."</p>
+          </div>
+
+        </div>
+
+        <div class="testcard" data-aos="flip-right" data-aos-duration="1000">
+          <div class="media media-2x1 gd-primary">
+
+            <img class="profile-image"
+              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg">
+
+
+          </div>
+          <div class="testcard-body">
+            <h5 class="testcard-title">Malachi Lensing</h5>
+            <p class="testcard-text">"I&rsquo;ve wanted a MacBook for a while now because of the build quality and the
+              simplicity of the OS. I spend an average 6 hours a day."</p>
+          </div>
+
+        </div>
+
+
+        <div class="testcard" data-aos="flip-right" data-aos-duration="1000">
+          <div class="media media-2x1 gd-primary">
+
+            <img class="profile-image"
+              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg">
+
+
+          </div>
+          <div class="testcard-body">
+            <h5 class="testcard-title">Christian Isla</h5>
+            <p class="testcard-text">"This MacBook has excellent processing speed. The screen is crystal clear and I
+              really
+              enjoy the touchbar. I set it up"</p>
+          </div>
+
+        </div>
+
+
+
+        <div class="testcard" data-aos="flip-right" data-aos-duration="1000">
+          <div class="media media-2x1 gd-primary">
+
+            <img class="profile-image"
+              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg">
+
+
+          </div>
+          <div class="testcard-body">
+            <h5 class="testcard-title">Lori Charles</h5>
+            <p class="testcard-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing
+              and
+              lasted me, it was time for an upgrade."</p>
+          </div>
+
+        </div>
+
+
+      </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="page-footer pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="footertitle">Aavkar</h5>
+          <p class="text-left">We also serve a selection of traditional drinks and snacks to accompany your meal. Our staff are knowledgeable and friendly, and we strive to provide you with a memorable dining experience. Whether you’re looking for a romantic evening out, a family gathering, or just a casual night out with friends, Aavkar is the perfect spot. Come and experience the flavor of Kathiwadi cuisine with us.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 footerlinks">
+
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold">Restaurant</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-decoration-none text-dark">About Us</a>
+            </li>
+            <li>
+              <a href="menu.html" class="text-decoration-none text-dark">Menu</a>
+            </li>
+            <li>
+              <a href="#!" class="text-decoration-none text-dark">Today's Specials</a>
+            </li>
+            <li>
+              <a href="#!" class="text-decoration-none text-dark">Contact Us</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3 footerlinks">
+
+          <!-- Links -->
+          <h5 class="text-uppercase fw-bold">Banquet</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-decoration-none text-dark">Banquet Gallery</a>
+            </li>
+            <li>
+              <a href="#!" class="text-decoration-none text-dark">Book for Order</a>
+            </li>
+            <li>
+              <a href="#party" class="text-decoration-none text-dark">Book For Occasion</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <a href="/"> MadeByDharaChauhan</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+  <script>
+    $(document).ready(function () {
+
+      $('.items').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      $('.items').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+    });
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+toast.show();
+  </script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script>
+  jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+  })
+</script>
+
+
+</body>
+
+</html>
