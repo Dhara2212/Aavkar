@@ -306,7 +306,7 @@ nav {
 
 .startertable th {
     background-color: antiquewhite;
-    padding: 10px 60px;
+    padding: 10px 100px;
     line-height: 32px;
 }
 
@@ -316,6 +316,71 @@ nav {
 
 .menubtn{
     margin-top: 52px;
+    margin-bottom: 20px;
+}
+
+/* OrderFood CSS */
+
+
+.add-icon{
+    margin-left: 25px;
+    width: 27px;
+    cursor: pointer;
+}
+.ofmenu{
+    margin-left: 168px;
+    margin-bottom: 30px;
+}
+.ofmenu table th{
+    padding: auto 30px;
+}
+#closebtn{
+    padding: 30px;
+}
+.itemslist {
+    margin-top: 30px;
+}
+
+.itemslist th {
+    background-color: antiquewhite;
+    padding: 10px 140px;
+    line-height: 32px;
+}
+
+.itemslist tr {
+    line-height: 33px;
+}
+.itemslist tr td svg{
+    margin-left: 100px;
+}
+
+#selecteditem{
+    margin-left: 60px;
+    margin-top: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+#numberlist{
+    margin-top: 13px;
+}
+#numberlist input{
+    width: 50px;
+    height: 20px;
+    margin-left: 30px;
+    
+}
+ 
+.box{
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    border: 1px solid maroon;
+    width: 40vw;
+    height: 71.5vh;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: fixed;
+}
+.box span{
+    margin-top: 30px;
 }
 
 footer {

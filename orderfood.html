@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Order Food</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand titlename" href="#">Aavkar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-decoration-none text-white fw-bold" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="#">Today's Specials <span
+                  class="badge bg-danger">New</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-none text-white fw-bold" href="menu.html">Menu</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <div class="my-3 col">
+      <button class="btn btn-danger mr-2"><a href="#starter" class="fw-bold text-decoration-none text-white">Starter</a></button>
+      <button class="btn btn-danger mr-2"><a href="#rotli" class="fw-bold text-decoration-none text-white">Rotlo/ Rotli/ Paratha</a></button>
+      <button class="btn btn-danger mr-2"><a href="#dawat" class="fw-bold text-decoration-none text-white">Kathiyawadi Dawat</a></button>
+      <button class="btn btn-danger mr-2"><a href="#daalrice" class="fw-bold text-decoration-none text-white">Daal-Rice</a></button>
+      <button class="btn btn-danger mr-2"><a href="#dessert" class="fw-bold text-decoration-none text-white">Dessert</a></button>
+      <button class="btn btn-danger mr-2"><a href="#chhas" class="fw-bold text-decoration-none text-white">Chhaas/ Papad</a></button>
+      
+      
+    </div> -->
+    <div class="options my-3 sticky-top bg-white p-2" data-aos="flip-down" data-aos-duration="1500">
+      <center>
+        <button class="btn btn-danger mr-2"><a href="#starter"
+            class="fw-bold text-decoration-none text-white">Starter</a></button>
+        <button class="btn btn-danger mr-2"><a href="#rotli" class="fw-bold text-decoration-none text-white">Rotlo/
+            Rotli/ Paratha</a></button>
+        <button class="btn btn-danger mr-2"><a href="#dawat" class="fw-bold text-decoration-none text-white">Kathiyawadi
+            Dawat</a></button>
+        <button class="btn btn-danger mr-2"><a href="#daalrice"
+            class="fw-bold text-decoration-none text-white">Daal-Rice</a></button>
+        <button class="btn btn-danger mr-2"><a href="#dessert"
+            class="fw-bold text-decoration-none text-white">Dessert</a></button>
+        <button class="btn btn-danger mr-2"><a href="#chhas" class="fw-bold text-decoration-none text-white">Chhaas/
+            Papad</a></button>
+      </center>
+    </div>
+
+
+    <div class="d-flex">
+
+      <div class="col ofmenu"  data-aos="fade-right" data-aos-duration="1500">
+        <table class="itemslist" id="starter">
+          <th colspan="3" class="text-center">Kathiyawadi Starter</th>
+          <tr>
+            <td>Plain Papad</td>
+            <td>25</td>
+            <td type="button" onclick="add('Plain Papad - Rs.25')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Masala Papad</td>
+            <td>75</td>
+            <td type="button" onclick="add('Masala Papad - Rs.75')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Bhungla Bateta</td>
+            <td>135</td>
+            <td type="button" onclick="add('Bhungla Bateta - Rs.135')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Chakri Chat</td>
+            <td>100</td>
+            <td type="button" onclick="add('Chakri Chat - Rs.100')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Masala Khichiya Papad</td>
+            <td>75</td>
+            <td type="button" onclick="add('Masala Khichiya Papad - Rs.75')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Vagharela Patra</td>
+            <td>70</td>
+            <td type="button" onclick="add('Vagharela Patra - Rs.70')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+        </table>
+        <hr>
+
+        <table class="itemslist" id="rotli">
+          <th colspan="3" class="text-center">Rotlo/ Rotli/ Paratha</th>
+          <tr>
+            <td>Plain Paratha</td>
+            <td>40</td>
+            <td type="button" onclick="add('Plain Paratha - Rs.40')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Aloo Paratha</td>
+            <td>60</td>
+            <td type="button" onclick="add('Aloo Paratha - Rs.60')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Bajra No Rotlo</td>
+            <td>30</td>
+            <td type="button" onclick="add('Bajra No Rotlo - Rs.30')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Juvar No Rotlo</td>
+            <td>35</td>
+            <td type="button" onclick="add('Juvar No Rotlo - Rs.35')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Makai No Rotlo</td>
+            <td>35</td>
+            <td type="button" onclick="add('Makai No Rotlo - Rs.35')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Rotli</td>
+            <td>20</td>
+            <td type="button" onclick="add('Rotli - Rs.20')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+
+        </table>
+        <hr>
+
+        <table class="itemslist" id="dawat">
+          <th colspan="3" class="text-center">Kathiyawadi Dawat</th>
+          <tr>
+            <td>Bharela Ravaiya Bateta</td>
+            <td>185</td>
+            <td type="button" onclick="add('Bharela Ravaiya Bateta - Rs.185')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Chana Masala</td>
+            <td>160</td>
+            <td type="button" onclick="add('Chana Masala - Rs.160')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Sev Onion</td>
+            <td>240</td>
+            <td type="button" onclick="add('Sev Onion - Rs.240')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Dahi Bhindi</td>
+            <td>175</td>
+            <td type="button" onclick="add('Dahi Bhindi - Rs.175')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Lasaniya Bateta</td>
+            <td>165</td>
+            <td type="button" onclick="add('Lasaniya Bateta - Rs.165')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Bengan Bharta</td>
+            <td>180</td>
+            <td type="button" onclick="add('Bengan Bharta - Rs.180')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+        </table>
+        <hr>
+
+        <table class="itemslist" id="daalrice">
+          <th colspan="3" class="text-center">Daal-Rice</th>
+          <tr>
+            <td>Aachari Khichdi</td>
+            <td>135</td>
+            <td type="button" onclick="add('Aachari Khichdi - Rs.135')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Daal Fry</td>
+            <td>140</td>
+            <td type="button" onclick="add('Daal Fry - Rs.140')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Jalaram Khichdi Kadhi</td>
+            <td>115</td>
+            <td type="button" onclick="add('Jalaram Khichdi Kadhi - Rs.115' )"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Jeera Rice</td>
+            <td>110</td>
+            <td type="button" onclick="add('Jeera Rice - Rs.110')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+          <tr>
+            <td>Vegetable Biryani</td>
+            <td>255</td>
+            <td type="button" onclick="add('Vegetable Biryani - Rs.255')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+        </table>
+        <hr>
+
+        <table class="itemslist" id="dessert">
+          <th colspan="3" class="text-center">Dessert</th>
+          <tr>
+            <td>Churma Na Ladoo</td>
+            <td>50</td>
+            <td type="button" onclick="add('Churma Na Ladoo - Rs.50')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Bundi nu Raitu</td>
+            <td>55</td>
+            <td type="button" onclick="add('Bundi nu Raitu - Rs.55')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Gulab Jambu-3</td>
+            <td>50</td>
+            <td type="button" onclick="add('Gulab Jambu-3pc - Rs.50')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Ghee-Gol</td>
+            <td>40</td>
+            <td type="button" onclick="add('Ghee-Gol - Rs.40')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Puranpoli</td>
+            <td>85</td>
+            <td type="button" onclick="add('Puranpoli - Rs.85')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Shrikhand</td>
+            <td>80</td>
+            <td type="button" onclick="add('Shrikhand - Rs.80')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+        </table>
+        <hr>
+
+        <table class="itemslist" id="chhas">
+          <th colspan="3" class="text-center">Chhaas/ Papad</th>
+          <tr>
+            <td>Cheese Masala Papad</td>
+            <td>70</td>
+            <td type="button" onclick="add('Cheese Masala Papad - Rs.70')"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Fry Papad</td>
+            <td>30</td>
+            <td type="button" onclick="add('Fry Papad - Rs.30')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Chhaas</td>
+            <td>35</td>
+            <td type="button" onclick="add('Chhaas - Rs.35')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Plain Dahi</td>
+            <td>55</td>
+            <td type="button" onclick="add('Plain Dahi - Rs.55')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td>Mineral Water</td>
+            <td>20</td>
+            <td type="button" onclick="add('Mineral Water - Rs.20')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+          <tr>
+            <td class="itemname">Masala Papad</td>
+            <td class="itemprice" value="75">75</td>
+            <td type="button" onclick="add('Masala Papad - Rs.75')"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-plus-circle add-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg></td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="col">
+        <div class="box">
+          <br>
+
+          <center>
+            <h4>Your Order</h4>
+            <span>Total Items: <b id="c"></b></span>
+          </center>
+
+          <!-- <div class="d-flex lists">
+
+              <ol id="selecteditem"></ol>
+              <ul id="iprice"></ul>
+              <ul id="numberlist" class="list-unstyled"></ul>
+              
+
+            </div> -->
+          <table class="d-flex justify-content-between lists">
+
+            <tr>
+              <td>
+                <ol id="selecteditem"></ol>
+              </td>
+              <td>
+                <ul id="iprice" class="list-unstyled"></ul>
+              </td>
+              <td>
+                <ul id="numberlist" class="list-unstyled"></ul>
+              </td>
+              <td><ul id="closebtn" class="list-unstyled"></ul></td>
+            </tr>
+
+          </table>
+          <center>
+            <button class="btn btn-danger"><a href="#" class="fw-bold text-decoration-none text-white">Place
+                Order</a></button>
+          </center>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+      <a href="/"> MadeByDharaChauhan</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+  <script>
+    let x = 0;
+
+    document.getElementById('c').innerText = x;
+    let ipricev = document.getElementsByClassName('itemprice').innerHTML;
+    // let y = document.querySelectorAll('.add-icon');
+    // document.addEventListener('click', add());
+    function add(val, numval) {
+
+      document.getElementById('selecteditem').innerHTML += "<li>" + val + "</li>";
+
+      // document.getElementById('selecteditem').innerHTML += `<li> ${val} </li>`;
+      document.getElementById('numberlist').innerHTML += `<li><input type="number" min="1" max="10"/><input type="button" value="X" onclick="remove()" class="btn-danger closebtn fw-bold text-decoration-none text-white"</li>`;
+      // document.getElementById('closebtn').innerHTML += `<li><center><button class="btn-danger closebtn fw-bold text-decoration-none text-white">Remove</button></center></li>`;
+
+
+      x = x + 1;
+      document.getElementById('c').innerText = x;
+    }
+
+    function remove(){
+      var close = document.getElementsByTagName('li');
+      for(var i=0; i<close.length; i++){
+        close.onclick=function(){
+          this.parentNode.removeChild(this);
+        }
+      }
+    }
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
